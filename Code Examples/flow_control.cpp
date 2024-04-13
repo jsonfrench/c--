@@ -63,5 +63,12 @@ int main() {
             break;
     }
 
+    // shorthand if
+    int num;
+    cout << "Enter a number" << endl;
+    cin >> num;
+    string is_even = (num % 2 == 0) ? "even" : "odd";
+    cout << "The number is " << is_even << endl; 
+
     return 0;
 }
