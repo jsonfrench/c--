@@ -33,6 +33,14 @@ int main() {
     }
     cout << endl;
 
+    // ehanced for loop
+    string word = "curmudgeonly"; 
+    for (char letter : word) {
+        cout << letter << ".";
+    }
+    cout << endl;
+
+
     // switch case
     int day;
     cout << "Enter a number 1-7" << endl;
