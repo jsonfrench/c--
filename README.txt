@@ -14,7 +14,7 @@ Topics Learned:
 - injection (<<) and extraction (>>) operators
 
 4/13/24
-I've kept up my streak of committing at least one thing every day. Big W. 
+I lost my commit streak because I didn't push anything until after midnight. Huge L.
 I'm starting to realize that c++ is a LOT like java. Most of the basic syntax is the same - loops, assignments, operators, conditionals...
 The biggest differences are the std::cout << and bitwise operators. I prefer c++. 
 Anyway I ditched the book for now since I wanted to speed through the rest of the basics. Now I'm using W3Schools. Great website. 
