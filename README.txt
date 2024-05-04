@@ -35,4 +35,21 @@ Topics learned:
 - arrays
     - traversing arrays
     - multidemnsional arrays
-Maybe when I learn how to use classes I can cook up some data structures. I'm sure there's already libraries with much better implementations than I could make, but it would be a good exercise. 
+Maybe when I learn how to use classes I can cook up some data structures. I'm sure there's already libraries with much better implementations than I could make, but it would be a good exercise.
+
+5/4/24
+Woah! It's been a while! I guess finals really killed all my motivation, but I'm back home and have all the free time in the world now! 
+Anyway, here's the progress I've made since last time: 
+- structs
+- references
+- pointers
+    - referencing
+    - derefercing
+- functions
+    - return types
+    - parameters 
+    - passing in references 
+We're on to the higher level concepts of a language now, no longer getting bogged down with data types and if statements. 
+Pointers don't seem so bad, but I can't imagine where I'd implement them. They seem to be useful for swapping variables and binding variables together. 
+I've also moved on from that C++ book. I don't think I need to go that slowly learning C++, I really just need to know the syntax and quirks of the language. 
+So, I am now using W3schools to teach myself at https://www.w3schools.com/cpp/default.asp 
