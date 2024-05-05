@@ -1,9 +1,10 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main() {
 
-    // A struct is halfway between an object and an array. It holds elements called "members" that can be accessed with {struct}.{member}
+    // A struct is kind of like a class. The main difference being there is no inheritance for structs. 
     struct {
         int age;
         string name;
@@ -30,6 +31,19 @@ int main() {
     for (car c: cars){
         cout << "A " << c.make << " with " << c.num_wheels << " wheels" << endl;        
     }
+
+    struct Point {
+        int x;
+        int y;
+        
+        double distance_to(Point p){
+            return sqrt((x-p.x)*(x-p.x)+(y-p.y)*(y-p.y));
+        }
+    }; 
+
+    Point p1 = {0,0};  
+    Point p2 = {1,1};
+    cout << p1.distance_to(p2) << endl;
 
     return 0;
 }

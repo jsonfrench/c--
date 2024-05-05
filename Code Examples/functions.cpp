@@ -5,10 +5,10 @@ using namespace std;
 void printStuff();
 void printString(string fstring); 
 int add(int num1, int num2);
+double add(double num1, double num2); //overloading *yawn* 
 int fibonacci(int num);
 void swapNums(int &num1, int &num2);
 void printArr(int intArr[5]);
-double add(double num1, double num2); //overloading *yawn* 
 
 // functions can also be defined before the main block
 void hello(string name = "user") {
