@@ -6,11 +6,28 @@ class Person {
     public:
         string name;
         int age;
+
+        Person(string name, int age){
+            this->name = name;  // "this->name" is like "this.name" from java
+            this->age = age;
+        }
     
         void print(){
             cout << "[" << name << ", " << age << "]" << endl;
         }
         bool is_younger_than(Person person);
+};
+
+class Student: public Person { // Student is a subclass of Person
+    private: 
+        int grade;
+    public: 
+        Student(string name, int age) : Person(name, age){
+            grade = age - 5;
+        }
+        int get_grade() {
+            return grade;
+        }
 };
 
 bool Person::is_younger_than(Person person){ // methods can be defined outside of the class as long as we define them inside the class
@@ -21,10 +38,8 @@ bool Person::is_younger_than(Person person){ // methods can be defined outside o
 int main(){
 
     // instantiate object and sett attributes
-    Person john;
-    john.name = "john";
-    john.age = 16;
-    // instantiate object using constructor 
+    Person john("John", 16);
+    // apparently this is a valid way to intialize a class
     Person jimmy = {"jimmy", 12};
 
     // we can print out the attributes of an object 
@@ -35,6 +50,11 @@ int main(){
     john.print();
 
     cout << jimmy.is_younger_than(john) << endl;
+
+    Student jack("jack", 8);
+    cout << jack.name << " is in grade " << jack.get_grade() << endl;
+    jack.print();
+
 
     return 0;
 }
